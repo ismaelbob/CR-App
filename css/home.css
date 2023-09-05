@@ -7,17 +7,58 @@
                         'summary summary summary summary list list';
     gap: .5em;
     padding: .5em;
-    height: 93%;
+    height: 600px;
 }
 .main_order {
     background-color: #D9D9D9;
     grid-area: order;
+    border-radius: 5px;
+    padding: .5rem;
 }
 .main_list {
     background-color: #D9D9D9;
     grid-area: list;
+    border-radius: 5px;
+    overflow-y: auto;
 }
 .main_summary {
     background-color: #D9D9D9;
     grid-area: summary;
+    border-radius: 5px;
+}
+.custom-card {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    padding: .5rem;
+    margin-right: .5em;
+    border-radius: 5px;
+    text-align: center;
+}
+.custom-card h3 {
+    font-size: 2.5em;
+}
+.custom-card-large {
+    background-color: white;
+    width: 100%;
+    padding: .5rem;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: .4fr 3fr .8fr;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+.custom-card-large h5 {
+    font-weight: 500;
+}
+
+.custom-card-combo {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+}
+.custom-grid-row {
+    display: grid;
+    grid-template-columns: .4fr 5fr 2fr;
+    align-items: start;
 }
