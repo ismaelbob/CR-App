@@ -34,6 +34,12 @@
     margin-right: .5em;
     border-radius: 5px;
     text-align: center;
+    position: relative;
+}
+.custom-card input[type="checkbox"] {
+    position: absolute;
+    top: 5px;
+    left: 9px;
 }
 .custom-card h3 {
     font-size: 2.5em;
@@ -44,7 +50,7 @@
     padding: .5rem;
     border-radius: 5px;
     display: grid;
-    grid-template-columns: .4fr 3fr .8fr;
+    grid-template-columns: .4fr 3fr .2fr;
     align-items: center;
     margin-bottom: .5rem;
 }
@@ -56,6 +62,14 @@
     background-color: white;
     width: 150px;
     height: 150px;
+    padding: .2rem;
+    border-radius: 5px;
+    position: relative;
+}
+.custom-card-combo input[type="checkbox"] {
+    position: absolute;
+    top: 5px;
+    left: 9px;
 }
 .custom-grid-row {
     display: grid;

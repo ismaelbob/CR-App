@@ -16,17 +16,39 @@
                 <div class="mb-2">
                     <h5>Platos</h5>
                     <div class="d-flex justify-content-between">
-                        <div class="custom-card-combo"></div>
-                        <div class="custom-card-combo"></div>
-                        <div class="custom-card-combo"></div>
-                        <div class="custom-card-combo"></div>
+                        <div class="custom-card-combo">
+                            <input class="form-check-input" type="checkbox" value="p-canasta" id="chk-canasta">
+                            <label for="chk-canasta"><img class="img-fluid rounded" src="../images/RKT canasta.png" alt="RKT"></label>
+                        </div>
+                        <div class="custom-card-combo">
+                            <input class="form-check-input" type="checkbox" value="p-broaster" id="chk-broaster">
+                            <label for="chk-broaster"><img class="img-fluid rounded" src="../images/RKT broaster.png" alt="RKT"></label>
+                        </div>
+                        <div class="custom-card-combo">
+                            <input class="form-check-input" type="checkbox" value="p-alitas" id="chk-alitas">
+                            <label for="chk-alitas"><img class="img-fluid rounded" src="../images/RKT alitas.png" alt="RKT"></label>
+                        </div>
+                        <div class="custom-card-combo">
+                            <input class="form-check-input" type="checkbox" value="p-pique" id="chk-pique">
+                            <label for="chk-pique"><img class="img-fluid rounded" src="../images/RKT pique.png" alt="RKT"></label>
+                        </div>
+                        <div class="custom-card-combo">
+                            <input class="form-check-input" type="checkbox" value="p-tablita" id="chk-tablita">
+                            <label for="chk-tablita"><img class="img-fluid rounded" src="../images/RKT tablita.png" alt="RKT"></label>
+                        </div>
                     </div>
                 </div>
                     <div class="mb-5">
                         <h4>Extras</h4>
                         <div class="d-flex justify-content-start">
-                        <div class="custom-card"></div>
-                        <div class="custom-card"></div>
+                        <div class="custom-card">
+                            <input class="form-check-input" type="checkbox" value="p-tablita" id="chk-fideo">
+                            <label for="chk-fideo"><img class="img-fluid rounded" src="../images/RKT fideo.png" alt="RKT"></label>
+                        </div>
+                        <div class="custom-card">
+                            <input class="form-check-input" type="checkbox" value="p-tablita" id="chk-arroz">
+                            <label for="chk-arroz"><img class="img-fluid rounded" src="../images/RKT arroz.png" alt="RKT"></label>
+                        </div>
                         <div class="custom-card"></div>
                         <div class="custom-card"></div>
                     </div>
@@ -50,7 +72,7 @@
                     </div>
                     <div class="d-flex flex-column">
                         <h5>31. Gonzales</h5>
-                        <h6>Pollo a la canasta + fideo + mini</h6>
+                        <h6>Pollo a la canasta + fideo + arroz + mini</h6>
                     </div>
                     <div class="d-flex justify-content-end">
                         <div class="btn btn-secondary btn-sm mx-1">
@@ -90,7 +112,7 @@
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed bottom-0 w-100 custom-shadow">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./">Rooster King Trafalgar</a>
+                <a class="navbar-brand" href="./"><img src="../images/RKT logo.png" alt="Logo" width="25">Rooster King Trafalgar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
