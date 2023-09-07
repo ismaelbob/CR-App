@@ -13,56 +13,58 @@
         <div class="main container-xxl">
             <!-- Seccion para hacer pedido -->
             <div class="main_order">
-                <div class="mb-2">
-                    <h5>Platos</h5>
-                    <div class="d-flex justify-content-between">
-                        <div class="custom-card-combo">
-                            <input class="form-check-input" type="checkbox" value="p-canasta" id="chk-canasta">
-                            <label for="chk-canasta"><img class="img-fluid rounded" src="../images/RKT canasta.png" alt="RKT"></label>
-                        </div>
-                        <div class="custom-card-combo">
-                            <input class="form-check-input" type="checkbox" value="p-broaster" id="chk-broaster">
-                            <label for="chk-broaster"><img class="img-fluid rounded" src="../images/RKT broaster.png" alt="RKT"></label>
-                        </div>
-                        <div class="custom-card-combo">
-                            <input class="form-check-input" type="checkbox" value="p-alitas" id="chk-alitas">
-                            <label for="chk-alitas"><img class="img-fluid rounded" src="../images/RKT alitas.png" alt="RKT"></label>
-                        </div>
-                        <div class="custom-card-combo">
-                            <input class="form-check-input" type="checkbox" value="p-pique" id="chk-pique">
-                            <label for="chk-pique"><img class="img-fluid rounded" src="../images/RKT pique.png" alt="RKT"></label>
-                        </div>
-                        <div class="custom-card-combo">
-                            <input class="form-check-input" type="checkbox" value="p-tablita" id="chk-tablita">
-                            <label for="chk-tablita"><img class="img-fluid rounded" src="../images/RKT tablita.png" alt="RKT"></label>
+                <form action="">
+                    <div class="mb-2">
+                        <h5>Platos</h5>
+                        <div class="d-flex justify-content-between">
+                            <div class="custom-card-combo">
+                                <input class="form-check-input" type="checkbox" value="p-canasta" id="chk-canasta">
+                                <label for="chk-canasta"><img class="img-fluid rounded" src="../images/RKT canasta.png" alt="RKT"></label>
+                            </div>
+                            <div class="custom-card-combo">
+                                <input class="form-check-input" type="checkbox" value="p-broaster" id="chk-broaster">
+                                <label for="chk-broaster"><img class="img-fluid rounded" src="../images/RKT broaster.png" alt="RKT"></label>
+                            </div>
+                            <div class="custom-card-combo">
+                                <input class="form-check-input" type="checkbox" value="p-alitas" id="chk-alitas">
+                                <label for="chk-alitas"><img class="img-fluid rounded" src="../images/RKT alitas.png" alt="RKT"></label>
+                            </div>
+                            <div class="custom-card-combo">
+                                <input class="form-check-input" type="checkbox" value="p-pique" id="chk-pique">
+                                <label for="chk-pique"><img class="img-fluid rounded" src="../images/RKT pique.png" alt="RKT"></label>
+                            </div>
+                            <div class="custom-card-combo">
+                                <input class="form-check-input" type="checkbox" value="p-tablita" id="chk-tablita">
+                                <label for="chk-tablita"><img class="img-fluid rounded" src="../images/RKT tablita.png" alt="RKT"></label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                    <div class="mb-5">
-                        <h4>Extras</h4>
-                        <div class="d-flex justify-content-start">
-                        <div class="custom-card">
-                            <input class="form-check-input" type="checkbox" value="p-tablita" id="chk-fideo">
-                            <label for="chk-fideo"><img class="img-fluid rounded" src="../images/RKT fideo.png" alt="RKT"></label>
+                        <div class="mb-5">
+                            <h5>Extras</h5>
+                            <div class="d-flex justify-content-start">
+                            <div class="custom-card">
+                                <input class="form-check-input" type="checkbox" value="p-tablita" id="chk-fideo">
+                                <label for="chk-fideo"><img class="img-fluid rounded" src="../images/RKT fideo.png" alt="RKT"></label>
+                            </div>
+                            <div class="custom-card">
+                                <input class="form-check-input" type="checkbox" value="p-tablita" id="chk-arroz">
+                                <label for="chk-arroz"><img class="img-fluid rounded" src="../images/RKT arroz.png" alt="RKT"></label>
+                            </div>
+                            <div class="custom-card"></div>
+                            <div class="custom-card"></div>
                         </div>
-                        <div class="custom-card">
-                            <input class="form-check-input" type="checkbox" value="p-tablita" id="chk-arroz">
-                            <label for="chk-arroz"><img class="img-fluid rounded" src="../images/RKT arroz.png" alt="RKT"></label>
-                        </div>
-                        <div class="custom-card"></div>
-                        <div class="custom-card"></div>
                     </div>
-                </div>
-                <div class="custom-grid-row">
-                    <h3>32</h3>
-                    <input class="form-control" type="text" placeholder="Nombre para pedido" aria-label=".form-control-lg example">
-                    <button type="button" class="btn btn-primary ms-3">Agregar pedido</button>
-                </div>
+                    <div class="custom-grid-row">
+                        <h3>32</h3>
+                        <input class="form-control" type="text" placeholder="Nombre para pedido" aria-label=".form-control-lg example">
+                        <button type="button" class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#modal-confirmar-pedido">Agregar pedido</button>
+                    </div>
+                </form>
             </div>
 
             <!-- Seccion de pedidos realizados -->
 
-            <div class="main_list d-flex flex-column align-items-center p-2">
+            <div class="main_list d-flex flex-column align-items-center">
                 <h5>Lista de pedidos</h5>
                 <div class="custom-card-large">
                     <div>
@@ -92,7 +94,7 @@
 
             <!-- Seccion de resumen de ventas del dia -->
 
-            <div class="main_summary d-flex flex-column p-2">
+            <div class="main_summary d-flex flex-column">
                 <h5>Resumen de ventas</h5>
                 <div class="d-flex justify-content-between align-items-center flex-wrap">
                     <div class="d-flex">
@@ -127,6 +129,35 @@
                 </div>
             </div>
         </nav>
+    </div>
+
+    <!-- Modal para confirmar pedido -->
+    <div class="modal fade" id="modal-confirmar-pedido" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Confirmar pedido</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-around">
+                <button class="custom-button-card" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                    <h6>Para llevar</h6>
+                </button>
+                <button class="custom-button-card" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                    </svg>
+                    <h6>Para mesa</h6>
+                </button>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar pedido</button>
+            </div>
+            </div>
+        </div>
     </div>
 </body>
 <script src="../libraries/bootstrap/js/bootstrap.min.js"></script>
