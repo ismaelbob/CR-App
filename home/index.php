@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/RKT ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../libraries/bootstrap/css/bootstrap.min.css">
@@ -77,13 +78,13 @@
                         <h6>Pollo a la canasta + fideo + arroz + mini</h6>
                     </div>
                     <div class="d-flex justify-content-end">
-                        <div class="btn btn-secondary btn-sm mx-1">
+                        <button class="btn btn-secondary btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#modal-completado">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
                                 <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
                                 <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.235.235 0 0 1 .02-.022z"/>
                             </svg>
-                        </div>
-                        <button class="btn btn-danger btn-sm">
+                        </button>
+                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal-eliminar">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
                                 <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
                             </svg>
@@ -114,13 +115,13 @@
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed bottom-0 w-100 custom-shadow">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./"><img src="../images/RKT logo.png" alt="Logo" width="25">Rooster King Trafalgar</a>
+                <a class="navbar-brand" href="./"><img src="../images/RKT logo.png" alt="Logo" width="28" class="me-2">Rooster King Trafalgar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="./">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pedidos/">Pedidos</a></li>
                         <li class="nav-item"><a class="nav-link" href="../administrar/">Administrar</a></li>
                     </ul>
                     <ul class="navbar-nav">
@@ -155,6 +156,41 @@
             </div>
             <div class="modal-footer d-flex justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar pedido</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Eliminar -->
+    <div class="modal fade" id="modal-eliminar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Aviso</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Esta seguro de eliminar el pedido?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Eliminar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal para completar pedido -->
+    <div class="modal fade" id="modal-completado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Aviso</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                El pedido fue completado?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Si, completado</button>
             </div>
             </div>
         </div>
