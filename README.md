@@ -1,2 +1,3 @@
-# RKT-App
-Para Rooster King Trafalgar
+# CR-App
+CHICKEN ROOSTER APP
+Barrio Trafalgar
